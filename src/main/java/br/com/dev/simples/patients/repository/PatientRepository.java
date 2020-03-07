@@ -10,4 +10,6 @@ public interface PatientRepository extends CrudRepository<Patient, Integer>{
 
 	@Override
     public List<Patient> findAll();
+	
+	public List<Patient> findByFirstName(String firstName);
 }
